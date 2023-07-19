@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocoaberry's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+<style>
+    body{
+        background-color: royalblue;
+    }
+    h1{
+        font-family: 'Dancing Script' , cursive;
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        font-size: 50pt;
+        color: darkblue;
+    }
+    .images{
+        display: inline-block;
+        justify-content: space-around;
+        padding-top: 30px;
+    }
+    .port{
+        border-radius: 10px;
+        border-style: solid;
+        border-color: grey;
+        border-width: 2px ;
+        box-shadow: 1px 1px 3px 0px black; 
+        transition: 0.2s cubic-bezier(0.6, 0.03, 0.28, 0.98);  
+        transform: scale(0.9);
+    }
+    .port:hover{ 
+        transform: scale(1);
+        transition: 0.2s cubic-bezier(0.6, 0.03, 0.28, 0.98);
+    }
+    body{
+        background-color: #e5e5f7;
+opacity: 0.8;
+background-image:  radial-gradient(royalblue 0.5px, transparent 0.5px), radial-gradient(royalblue 0.5px, #e5e5f7 0.5px);
+background-size: 20px 20px;
+background-position: 0 0,10px 10px;
+    }
+</style>
+<body>
+    <h1>CocoaBerry's Portfolio</h1>
+    <div class="images">
+        <img class="port" src="./1.jpg" width="250px">
+        <img class="port" src="./2.jpg" width="250px">
+        <img class="port" src="./3.jpg" width="250px">
+        <img class="port" src="./4.jpg" width="250px">
+        <img class="port" src="./5.jpg" width="250px">
+    </div>
+</body>
+</html>
