@@ -1,0 +1,41 @@
+
+.btn{
+    transform: scale(0.9);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 1em 1.5em;
+    background: none;
+    border: 2px solid gray ;
+    font-size: 15px;
+    color: black;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+    border-radius: 100px;
+    background-color: #F5F5F5;
+    font-weight: 1000;
+    box-shadow: 0 2px 0 2px #000;
+}
+.btn:before{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 120%;
+    background-color: #DFD7BF;
+    top: 50%;
+    transform: skewX(30deg) translate(-150%,-50%);
+    transition: all 0.5s;
+}
+.btn:hover{
+    background-color: #B31312;
+    color: white;
+    box-shadow: 0 3px 0 1px #000;
+    transform: scale(1);
+}
+.btn:hover::before{
+    transform: skewX(30deg) translate(150%, -50%);
+    transition-delay: 0.001s;
+}
+.btn:active{
+    transform: scale(0.9);
+}
